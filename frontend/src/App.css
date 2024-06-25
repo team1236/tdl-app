@@ -1,0 +1,704 @@
+body {
+  margin: 0;
+  background-color: #eef2ff;
+  font-family: sans-serif;
+}
+.navbar {
+  border-bottom: 1px solid lightgray;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  background-color: white;
+}
+.nav-icons {
+  display: flex;
+  gap: 20px;
+}
+.img-hover {
+  cursor: pointer;
+}
+.nav-sub-2 {
+  display: flex;
+  gap: 65px;
+  align-items: center;
+  padding: 0 24px;
+}
+.admin-name-nav {
+  font-size: 14px;
+  font-family: sans-serif;
+  color: #1e293b;
+}
+.admin-name-nav-sub {
+  font-size: 10px;
+  font-family: sans-serif;
+  color: #1e293b;
+}
+.admin-name-online {
+  color: #22c55e;
+  height: 8px;
+  width: 8px;
+  position: absolute;
+}
+.admin-menu-item {
+  font-size: 14px;
+  color: #1e293b;
+  padding: 0 16px;
+  font-family: sans-serif;
+}
+.admin-bell-self {
+  width: 360px;
+  height: 317px;
+  position: absolute;
+  top: 55px;
+  right: 90px;
+  border-radius: 18px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+.admin-bell-b1 {
+  background-color: #0a62c9;
+  color: white;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  padding: 24px 24px 24px 24px;
+  display: flex;
+  justify-content: space-between;
+}
+.admin-bell-h1 {
+  font-size: 17px;
+  font-family: sans-serif;
+}
+.admin-bell-b2 {
+  text-align: center;
+  margin-top: 50px;
+}
+.admin-bell-b2-icon {
+  background-color: lightgray;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.admin-bell-b2-h1 {
+  font-size: 1.25rem;
+  font-family: sans-serif;
+  font-weight: 600 !important;
+  color: #1e293b;
+  padding-top: 25px;
+  padding-bottom: 15px;
+}
+.admin-bell-b2-h2 {
+  font-size: 13px;
+  font-family: sans-serif;
+  color: #64748b;
+}
+.admin-banner {
+  background-color: #0c3c15;
+  height: 202px;
+  display: flex;
+  gap: 25px;
+  color: white;
+  font-family: sans-serif;
+  align-items: center;
+  padding-left: 75px;
+  cursor: pointer;
+}
+.admin-b1 {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.detail-card-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 50px;
+  font-family: sans-serif;
+}
+.detail-card {
+  background-color: white;
+  width: 14%;
+  padding: 24px;
+  border-radius: 18px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 24px 24px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.detail-card-title {
+  font-size: 16px;
+  font-family: sans-serif;
+  color: #1e293b;
+  font-weight: 500;
+}
+.admin-colleague-main {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 20px;
+}
+.admin-colleague {
+  background-color: white;
+  width: 20%;
+  padding: 24px;
+  border-radius: 18px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 24px 24px 24px 24px;
+}
+.admin-patient {
+  background-color: white;
+  width: 20%;
+  padding: 24px;
+  height: 272px;
+  border-radius: 18px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 24px 24px 24px 24px;
+}
+.admin-dayleft {
+  background-color: white;
+  width: 38%;
+  padding: 24px;
+  border-radius: 18px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 24px 24px 24px 24px;
+}
+.admin-feedback {
+  background-color: white;
+  width: 86.5%;
+  padding: 24px;
+  height: 511px;
+  border-radius: 18px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 24px 24px 24px 24px;
+}
+.admin-feedback-main {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.admin-colleague-b1 {
+  display: flex;
+  justify-content: space-between;
+  color: #1e293b;
+  font-size: 20px;
+  font-family: sans-serif;
+  align-items: center;
+}
+.css-6od3lo-MuiChip-label {
+  font-size: 12px;
+  cursor: pointer;
+  font-weight: 500;
+  color: #64748b;
+}
+.admin-colleague-b2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 14px;
+  font-family: sans-serif;
+  color: #1e293b;
+  padding-top: 100px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+.admin-dayleft-h1 {
+  font-size: 16px;
+  color: #1e293b;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+.admin-dayleft-b1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.admin-dayleft-b2 {
+  display: flex;
+  gap: 18px;
+  padding: 12px;
+  border-radius: 15px;
+  background-color: #e8fff2;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+.admin-dayleft-h2 {
+  font-size: 12px;
+  color: #1e293b;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+.admin-dayleft-h2-sub {
+  font-size: 20px;
+  color: #3bb76f;
+  font-family: sans-serif;
+}
+.admin-dayleft-h2-sub2 {
+  font-size: 20px;
+  color: #38bdf8;
+  font-family: sans-serif;
+}
+.admin-dayleft-b2-p1 {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-top: 5px;
+}
+.admin-dayleft-b2-sub2 {
+  display: flex;
+  gap: 18px;
+  padding: 12px;
+  border-radius: 15px;
+  background-color: #d3f1ff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+.admin-revalidation {
+  background-color: white;
+  width: 50%;
+  padding: 24px;
+  height: 477px;
+  border-radius: 18px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.admin-activity {
+  background-color: white;
+  width: 31%;
+  padding: 24px 32px 16px;
+  height: 477px;
+  border-radius: 18px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.admin-revalidation-main {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 20px;
+}
+.admin-footer {
+  margin-top: 25px;
+}
+.admin-footer-main {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  padding: 0px 24px;
+  background-color: white;
+  height: 56px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.admin-footer-sub {
+  display: flex;
+  gap: 5px;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+.admin-common-font {
+  font-size: 20px;
+  color: #1e293b;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+.admin-feedback-select-sub {
+  display: flex;
+  gap: 20px;
+}
+.admin-feedback-select {
+  display: flex;
+  justify-content: space-between;
+}
+.admin-feedback-chart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+.appaisals-completed-component-card {
+  display: flex;
+  gap: 20px;
+}
+.appraisal-data-card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-family: sans-serif;
+}
+.appraisal-child-card-main {
+  display: grid;
+  grid-template-columns: repeat(3, 35%);
+  gap: 0.6rem;
+  font-family: sans-serif;
+}
+.admin-activity-feed-main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 30px;
+}
+.admin-activity-feed-b2 {
+  font-family: sans-serif;
+  font-size: 15px;
+  color: #0a62c9;
+  margin-top: 50px;
+  cursor: pointer;
+}
+.admin-revalidation-chart-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+.user-profile {
+  border: 1px solid black;
+  background-color: #0057a4;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 2rem;
+  color: white;
+  font-family: sans-serif;
+}
+
+.avtar {
+  border-radius: 9999px !important;
+}
+.user-name {
+  font-size: 36px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.user-profile-sub {
+  display: flex;
+  gap: 20px;
+}
+.user-parent {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+.user-role {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.doctor-regiter-button {
+  display: flex;
+  margin: 1%;
+  justify-content: end;
+}
+.dotor-register-btn {
+  background-color: #0a62c9;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: sans-serif;
+  cursor: pointer;
+  width: 15%;
+  justify-content: center;
+  gap: 10px;
+}
+.dotor-register-btn:hover {
+  background-color: #0057a4;
+}
+
+.doctor-count-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 20%;
+  cursor: pointer;
+  margin: 0;
+}
+
+.card-title {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.doctor-icon {
+  width: 85%;
+}
+
+.count {
+  font-size: 24px;
+  color: #e53935;
+  font-weight: bold;
+}
+
+.label {
+  font-size: 16px;
+  color: #e53935;
+}
+
+.calender-card {
+  font-family: sans-serif;
+}
+
+.appraisal-card {
+  margin-top: 15px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  font-family: sans-serif;
+  width: 92%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.appraisal-child-card-main {
+  display: grid;
+  grid-template-columns: repeat(3, 35%);
+  gap: 0.6rem;
+  font-family: sans-serif;
+}
+.appraisal-card-content-main {
+  display: flex;
+  gap: 4.1rem;
+}
+.appraisal-child-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  width: 18vw;
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+}
+
+.appraisal-child-card-icon {
+  width: 56px;
+  height: 56px;
+}
+.appraisal-child-card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.appraisals-meeting-card {
+  margin-top: 15px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  font-family: sans-serif;
+  width: 92%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.appraisers-performance-card {
+  margin-top: 15px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  width: 15vw;
+  padding: 20px;
+  font-family: sans-serif;
+  width: 54%;
+}
+
+.appaisals-completed-component {
+  margin-top: 15px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  width: 15vw;
+  padding: 20px;
+  font-family: sans-serif;
+  height: 60vh;
+  width: 35%;
+}
+.appraisals-data-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.appraisals-card-dashboard {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.appaisals-completed-component-card {
+  display: flex;
+  gap: 20px;
+}
+
+.appaisals-completed-component-sub {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 25px;
+}
+
+.appraisal-data-card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.appaisals-completed-component-link {
+  font-size: 14px;
+  color: #0a628b;
+}
+.appaisals-completed-component-link:hover {
+  cursor: pointer;
+}
+
+.revalidation-card {
+  margin-top: 15px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  width: 15vw;
+  padding: 20px;
+  font-family: sans-serif;
+  width: 69%;
+}
+
+.activity-feed-card {
+  margin-top: 15px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  width: 15vw;
+  padding: 20px;
+  font-family: sans-serif;
+  width: 20%;
+}
+
+.revalidation-card-dashboard {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.activity-feed-card-sub {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.revalidation-card-sub {
+  display: grid;
+  grid-template-columns: repeat(2, 30%);
+  gap: 1rem;
+}
+
+.appraisal-card-pie-label-color {
+  background-color: #3b82f680;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
+
+.appraisal-card-pie-label-line {
+  border: 1px solid black;
+}
+
+.appraisal-card-pie-label-main {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem;
+}
+.appraisal-card-pie-label-sub {
+  display: flex;
+  gap: 10px;
+}
+
+.appraisals-meeting-card-chart {
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  font-family: sans-serif;
+  width: 50%;
+}
+
+.appraisals-meeting-card-container {
+  display: flex;
+  gap: 10px;
+}
+
+.css-11xur9t-MuiPaper-root-MuiTableContainer-root {
+  border-radius: 20px !important;
+}
+
+.toggle-button {
+  font-size: 14px;
+  color: #64748b;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: transparent;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.toggle-button.active {
+  color: #fff;
+  background-color: #0a62c9;
+}
+
+.toggle-button:not(.active):hover {
+  background-color: #e7f3ff;
+}
+
+.toggle-button-group {
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.appraiaers-performance-bar-chart {
+  margin-top: 20px;
+}
+
+.form-container {
+  font-family: "Sans-Serif";
+  padding: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+button {
+  margin-right: 10px;
+}
