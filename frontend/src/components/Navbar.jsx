@@ -11,7 +11,10 @@ import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNone
 import CloseIcon from "@mui/icons-material/Close";
 import { handleFullScreen } from "../utils/getFullScreen";
 import NavDrawer from "./NavDrawer";
-import { view_permission } from "../api/query/doctor-dashboard";
+import {
+  view_permission,
+  view_permission_admin,
+} from "../api/query/doctor-dashboard";
 import { grapQLAPI } from "../api/doctor-dashboard";
 
 const Navbar = () => {
@@ -31,8 +34,9 @@ const Navbar = () => {
 
   const fetchData_view_permission = async () => {
     try {
-      const res = await grapQLAPI({query: view_permission.query});
-      setData(res?.data?.view_permission?.permissions)
+      const query = false ? view_permission_admin.query : view_permission.query;
+      const res = await grapQLAPI({ query });
+      setData(res?.data?.view_permission?.permissions);
     } catch (error) {
       console.error("Error fetching data:", error);
     }
@@ -51,7 +55,7 @@ const Navbar = () => {
               sx={{ cursor: "pointer" }}
               onClick={() => setOpen(!openDrawer)}
             />
-            <NavDrawer setOpen={setOpen} open={openDrawer} data={data}/>
+            <NavDrawer setOpen={setOpen} open={openDrawer} data={data} />
           </div>
           <section className="nav-sub-2">
             <div className="nav-icons">

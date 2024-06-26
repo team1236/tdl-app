@@ -117,6 +117,7 @@ const DoctorDashboard = () => {
           titleSub={"Pages Completed"}
           textColor={"#3B82F6"}
           textColor2={"#2563EB"}
+          redirect={"/doctor/appraisal"}
         />
         <DetailCard
           type={"normal"}
