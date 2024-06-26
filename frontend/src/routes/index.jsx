@@ -4,6 +4,7 @@ import DoctorDashboard from "../pages/DoctorDashboard.jsx";
 import CommonElement from "../App.jsx";
 import DoctorRegistration from "../Admin/pages/DoctorRegistration.jsx";
 import AdminDashborad from "../Admin/pages/AdminDashborad.jsx";
+import DoctorsList from "../Admin/pages/DoctorsList.jsx";
 import DoctorAppraisal from "../pages/DoctorAppraisal.jsx";
 
 export const router = createBrowserRouter([
@@ -20,6 +21,8 @@ export const router = createBrowserRouter([
         element: <DoctorRegistration />,
       },
       {
+        path: "/manage/doctors/all",
+        element: <DoctorsList />,
         path: "/doctor/appraisal",
         element: <DoctorAppraisal />,
       },

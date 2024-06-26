@@ -2,7 +2,6 @@ import React from "react";
 import AppraisalsDataCardComponent from "./AppraisalsDataCardComponent";
 
 const AppaisalsCompletedComponent = ({ data }) => {
-  console.log("data", data);
   return (
     <div className="appaisals-completed-component">
       <div style={{ color: "#1E293B", fontSize: "20px" }}>
