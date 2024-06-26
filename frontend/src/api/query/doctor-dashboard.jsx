@@ -6,6 +6,10 @@ const view_permission = {
   query: `{\n  view_permission(userType: \"doctor\") {\n    permissions {\n      tag_name\n      title\n      subtitle\n      type\n      icon\n      link\n      display_order\n      display\n      permission {\n        role\n        create\n        read\n        update\n        delete\n        __typename\n      }\n      children {\n        tag_name\n        title\n        link\n        type\n        icon\n        permission {\n          role\n          create\n          read\n          update\n          delete\n          __typename\n        }\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n`,
 };
 
+const view_permission_admin = {
+  query: `{\n  view_permission(userType: \"admin\") {\n    permissions {\n      tag_name\n      title\n      subtitle\n      type\n      icon\n      link\n      display_order\n      display\n      permission {\n        role\n        create\n        read\n        update\n        delete\n        __typename\n      }\n      children {\n        tag_name\n        title\n        link\n        type\n        icon\n        permission {\n          role\n          create\n          read\n          update\n          delete\n          __typename\n        }\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n`,
+}
+
 const doctor_profile = {
   query: `{\n  doctor_profile {\n    _id\n    firstname\n    profileImage\n    lastname\n    email\n    profilePercentage {\n      profilePercentage\n      status\n      __typename\n    }\n    __typename\n  }\n}\n`,
   variables: {},
@@ -44,5 +48,6 @@ export {
   doctor_dashboard_widget,
   activity_feed,
   feedback_form,
-  revalidation_widget_dashboard
+  revalidation_widget_dashboard,
+  view_permission_admin
 };

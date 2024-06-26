@@ -5,6 +5,7 @@ import CommonElement from "../App.jsx";
 import DoctorRegistration from "../Admin/pages/DoctorRegistration.jsx";
 import AdminDashborad from "../Admin/pages/AdminDashborad.jsx";
 import DoctorsList from "../Admin/pages/DoctorsList.jsx";
+import DoctorAppraisal from "../pages/DoctorAppraisal.jsx";
 
 export const router = createBrowserRouter([
   {
@@ -13,7 +14,7 @@ export const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: false ? <DoctorDashboard /> : <AdminDashborad />,
+        element: true ? <DoctorDashboard /> : <AdminDashborad />,
       },
       {
         path: "/manage/doctors/new",
@@ -22,6 +23,8 @@ export const router = createBrowserRouter([
       {
         path: "/manage/doctors/all",
         element: <DoctorsList />,
+        path: "/doctor/appraisal",
+        element: <DoctorAppraisal />,
       },
     ],
   },
