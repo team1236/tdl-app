@@ -1,0 +1,44 @@
+.breadcrumb{
+    background-color: #ffff;
+    display: flex;
+    color: #1E293B;
+    font-family: sans-serif;
+    padding: 20px 75px 30px 75px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.breadcrumb-text{
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.doctor-register-form-container{
+    display: flex;
+    justify-content: center;
+}
+
+.form-container {
+    font-family: "Sans-Serif";
+    padding: 20px;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    font-family: sans-serif;
+    width: 50%;
+  }
+  
+  .form-title {
+    font-size: 18px;
+    color: #1E293B;
+  }
+  
+  .button-container{
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    margin-top: 20px;
+  }

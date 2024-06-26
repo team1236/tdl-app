@@ -407,7 +407,6 @@ body {
   font-weight: 500;
   font-family: sans-serif;
   cursor: pointer;
-  width: 15%;
   justify-content: center;
   gap: 10px;
 }
@@ -688,17 +687,4 @@ body {
 
 .appraiaers-performance-bar-chart {
   margin-top: 20px;
-}
-
-.form-container {
-  font-family: "Sans-Serif";
-  padding: 20px;
-}
-
-h2 {
-  margin-bottom: 20px;
-}
-
-button {
-  margin-right: 10px;
 }

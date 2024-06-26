@@ -1,0 +1,53 @@
+.doctors-list-container {
+    font-family: 'Sans-Serif';
+    padding: 20px;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  .doctors-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-field {
+    width: 300px;
+  }
+  
+  .status-active {
+    width: 12px;
+    height: 12px;
+    background-color: #4caf50; /* Green for active */
+    border-radius: 50%;
+  }
+  
+  .status-inactive {
+    width: 12px;
+    height: 12px;
+    background-color: #f44336; /* Red for inactive */
+    border-radius: 50%;
+  }
+  
+  .active-row {
+    background-color: #fffbe6;
+  }
+  
+  .inactive-row {
+    background-color: #fff;
+  }
+  
+  .pagination-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  }
+  
+  .rows-per-page {
+    width: 100px;
+  }
+  
