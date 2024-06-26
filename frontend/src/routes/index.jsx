@@ -4,6 +4,7 @@ import DoctorDashboard from "../pages/DoctorDashboard.jsx";
 import CommonElement from "../App.jsx";
 import DoctorRegistration from "../Admin/pages/DoctorRegistration.jsx";
 import AdminDashborad from "../Admin/pages/AdminDashborad.jsx";
+import DoctorAppraisal from "../pages/DoctorAppraisal.jsx";
 
 export const router = createBrowserRouter([
   {
@@ -12,11 +13,15 @@ export const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: false ? <DoctorDashboard /> : <AdminDashborad />,
+        element: true ? <DoctorDashboard /> : <AdminDashborad />,
       },
       {
         path: "/manage/doctors/new",
         element: <DoctorRegistration />,
+      },
+      {
+        path: "/doctor/appraisal",
+        element: <DoctorAppraisal />,
       },
     ],
   },

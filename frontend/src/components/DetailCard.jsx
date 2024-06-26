@@ -1,7 +1,8 @@
 import React from "react";
-
-const DetailCard = ({ type, title, data, titleSub, textColor, textColor2 }) => {
+import  { useNavigate } from "react-router-dom"
+const DetailCard = ({ type, title, data, titleSub, textColor, textColor2, redirect }) => {
   const currentDate = new Date();
+  const nav = useNavigate();
   const currentMonthName = currentDate.toLocaleString("default", {
     month: "long",
   });
@@ -9,7 +10,7 @@ const DetailCard = ({ type, title, data, titleSub, textColor, textColor2 }) => {
   const currentYear = currentDate.getFullYear();
 
   return (
-    <section className="detail-card">
+    <section className="detail-card" onClick={() => nav(redirect)}>
       {type === "normal" ? (
         <>
           <div className="detail-card-title">{title}</div>

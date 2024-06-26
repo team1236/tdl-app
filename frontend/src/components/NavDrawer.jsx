@@ -92,7 +92,7 @@ const NavDrawer = ({ open, setOpen, data }) => {
       </List>
     </Box>
   );
-  
+
   return (
     <div>
       <Drawer
@@ -100,7 +100,7 @@ const NavDrawer = ({ open, setOpen, data }) => {
         onClose={toggleDrawer(false)}
         sx={{
           "& .MuiPaper-root": {
-            backgroundColor: `${false ? "#0c3c15" : "#0057a4"}`,
+            backgroundColor: `${true ? "#0c3c15" : "#0057a4"}`,
             color: "whitesmoke",
           },
           "& .css-10hburv-MuiTypography-root": {
