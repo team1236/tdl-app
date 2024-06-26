@@ -23,6 +23,8 @@ export const router = createBrowserRouter([
       {
         path: "/manage/doctors/all",
         element: <DoctorsList />,
+      },
+      {
         path: "/doctor/appraisal",
         element: <DoctorAppraisal />,
       },
